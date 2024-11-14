@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Sklad Products{% endblock title %}
+{% block content %}
+    <div class="container">
+        {% for sklad in object_list %}
+          <div class="card">
+            <h1>Sklad Name:{{sklad.sklad}}</h1>
+            <h2>Sklad Contains:{{sklad.category}}</h2>
+          </div>
+        {% endfor %}
+    </div>
+{% endblock content %}
